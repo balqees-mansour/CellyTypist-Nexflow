@@ -1,0 +1,15 @@
+FROM debian:bullseye-slim
+
+LABEL image.author.name "Balqees Mansour"
+LABEL image.author.email "balqeesmansour0@gmail.com"
+
+RUN apt-get update && apt-get upgrade
+RUN apt-get install -y python3-pip
+RUN pip install celltypist
+RUN pip install --upgrade scanpy numba numpy pandas matplotlib 
+RUN cd root/
+RUN mkdir .config
+RUN mkdir .config/matplotlib
+RUN chmod +x .config/matplotlib
+
+ENV PATH=$PATH:/usr/games/
