@@ -2,6 +2,7 @@
   # CellyTypist-Nexflow 
 ![image](https://github.com/balqees-mansour/CellyTypist-Nexflow/assets/87857777/16194b6a-b1a3-4968-b45e-8ef88dd22c16)
 
+
 celltypist.nf is a Nextflow script that defines a pipeline for  single-cell RNA-sequencing data Annotation using the CellTypist tool. The pipeline consists of several processes, and this script includes the QUALITY process and ANNOTATION process.
 
 *** The script starts by defining the input parameters for the pipeline: ***
